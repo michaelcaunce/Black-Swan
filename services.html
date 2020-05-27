@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Start of Mobile Navigation -->
+  <div class="mobile__nav">
+    <!-- Start of checkbox hack -->
+    <input type="checkbox" class="mobile__nav--checkbox" id="navi-toggle" autocomplete="off">
+    <label for="navi-toggle" class="mobile__nav--button">
+      <span class="mobile__nav--button--icon">&nbsp;</span>
+    </label>
+    <div class="mobile__nav--background">&nbsp;</div>
+    <!-- Start of links -->
+    <nav class="mobile__nav--navigation">
+      <ul class="mobile__nav--navigation--list">
+        <li class="mobile__nav--navigation--list--item">
+          <a href="index.html" class="mobile__nav--navigation--list--item--link" data-text="Home">Home</a>
+        </li>
+        <li class="mobile__nav--navigation--list--item">
+          <a href="about.html" class="mobile__nav--navigation--list--item--link" data-text="About">About</a>
+        </li>
+        <li class="mobile__nav--navigation--list--item">
+          <a href="projects.html" class="mobile__nav--navigation--list--item--link" data-text="Projects">Projects</a>
+        </li>
+        <li class="mobile__nav--navigation--list--item">
+          <a href="contact.html" class="mobile__nav--navigation--list--item--link" data-text="Contact">Contact</a>
+        </li>
+        <li class="mobile__nav--navigation--list--item">
+          <a href="contact.html" class="mobile__nav--navigation--list--item--link" data-text="CV">CV</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <header class="header">
+    <img src="images/header-logo.png" alt="" class="header__logo">
+     <!-- Start of Navigation -->
+    <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list--item"><a class="nav__list--item--link" href="#" data-text="Home">Home</a></li>
+          <li class="nav__list--item"><a class="nav__list--item--link" href="#">About</a></li>
+          <li class="nav__list--item"><a class="nav__list--item--link" href="#">Projects</a></li>
+          <li class="nav__list--item"><a class="nav__list--item--link" href="#">Contact</a></li>
+          <li class="nav__list--item"><a class="nav__list--item--link" href="#">CV</a></li>
+        </ul>
+    </nav>
+    
+  </header>
+
+  <section class="hero">
+    <div class="hero__img"></div>
+    <div class="hero__content">
+      <h1 class="hero__content--title">Black Swan <span>Digital</span></h1>
+      <h2 class="hero__content--sub">What Can We Do For You?</h2>
+      <p class="hero__content--text">Every story we tell and every interaction we create, must not only look beautiful, but has to feel and function beautifully, too.</p>
+    </div>
+    <footer class="hero__footer">
+      <div class="hero__footer--img"></div>
+      <a href="#" class="hero__footer--cta">Recent Projects</a>
+    </footer>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h1 class="services__title">01</h1>
+    <h2 class="services__subtitle">Our Services</h2>
+    <div class="services__container">
+      <img src="images/about12.jpeg" alt="" class="services__container--img--1">
+      <img src="images/about13.jpeg" alt="" class="services__container--img--2">
+    </div>
+  </section>
+
+  <section class="quote">
+    <img src="images/main2.jpg" alt="" class="quote__img">
+    <div class="quote__container">
+      <h1 class="quote__container--title">Why Black Swan?</h1>
+      <p class="quote__container--content">Creativity ignites when everyone is empowered and able to be their full self, whether that is loud, quiet, weird, wild. Whatever is unique to them. All are welcome.</p>
+    </div>
+    
+  </section>
+  
+  <footer class="footer">
+    <img src="images/footer-logo.png" alt="">
+  </footer>
+
+  
+<!--Gsap CDN    -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.5/gsap.min.js"></script>
+
+<script>
+
+  var tl = new TimelineMax();
+
+    gsap.fromTo('.nav__list',
+          {x: '30rem', opacity: 0},
+          {x: 0, opacity: 1, ease: 'back.out(0)', delay:.5});
+
+    gsap.fromTo('.hero__img',
+        {x: '3rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(0)', delay:2.2});
+
+    gsap.fromTo('.hero__content--title',
+        {x: '30rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(0)', delay:1});
+
+    gsap.fromTo('.hero__content--sub',
+        {x: '30rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(0)', delay:1.4});
+
+    gsap.fromTo('.hero__content--text',
+        {x: '30rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(0)', delay:1.8});
+
+    gsap.fromTo('.hero__footer',
+        {x: '-30rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(0)', delay:2.2});
+
+    gsap.fromTo('.header__logo',
+        {x: '-30rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(0)', delay:3});
+      
+      
+
+</script>
+
+</body>
+</html>

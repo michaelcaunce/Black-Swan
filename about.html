@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Start of Mobile Navigation -->
+  <div class="mobile__nav">
+    <!-- Start of checkbox hack -->
+    <input type="checkbox" class="mobile__nav--checkbox" id="navi-toggle" autocomplete="off">
+    <label for="navi-toggle" class="mobile__nav--button">
+      <span class="mobile__nav--button--icon">&nbsp;</span>
+    </label>
+    <div class="mobile__nav--background">&nbsp;</div>
+    <!-- Start of links -->
+    <nav class="mobile__nav--navigation">
+      <ul class="mobile__nav--navigation--list">
+        <li class="mobile__nav--navigation--list--item">
+          <a href="index.html" class="mobile__nav--navigation--list--item--link" data-text="Home">Home</a>
+        </li>
+        <li class="mobile__nav--navigation--list--item">
+          <a href="about.html" class="mobile__nav--navigation--list--item--link" data-text="About">About</a>
+        </li>
+        <li class="mobile__nav--navigation--list--item">
+          <a href="projects.html" class="mobile__nav--navigation--list--item--link" data-text="Projects">Projects</a>
+        </li>
+        <li class="mobile__nav--navigation--list--item">
+          <a href="contact.html" class="mobile__nav--navigation--list--item--link" data-text="Contact">Contact</a>
+        </li>
+        <li class="mobile__nav--navigation--list--item">
+          <a href="contact.html" class="mobile__nav--navigation--list--item--link" data-text="CV">CV</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <header class="header">
+    <img src="images/header-logo.png" alt="" class="header__logo">
+     <!-- Start of Navigation -->
+    <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list--item"><a class="nav__list--item--link" href="#">Home</a></li>
+          <li class="nav__list--item"><a class="nav__list--item--link" href="about.html">About</a></li>
+          <li class="nav__list--item"><a class="nav__list--item--link" href="services.html">Services</a></li>
+          <li class="nav__list--item"><a class="nav__list--item--link" href="#">Projects</a></li>
+          <li class="nav__list--item"><a class="nav__list--item--link" href="#">Contact</a></li>
+          <li class="nav__list--item"><a class="nav__list--item--link" href="#">CV</a></li>
+        </ul>
+    </nav>
+    
+  </header>
+
+  <section class="hero__pages">
+    <img src="images/about-hero.jpeg" alt="" class="hero__pages--img">
+    <div class="hero__pages--content">
+      <h1 class="hero__pages--content--title">Black Swan <span>Digital</span></h1>
+      <h2 class="hero__pages--content--sub">Creativity Connected</h2>
+      <p class="hero__pages--content--text">Every story we tell and every interaction we create, must not only look beautiful, but has to feel and function beautifully, too.</p>
+    </div>
+  </section>
+
+  <!-- <section class="hero__small">
+    <div class="hero__small--img"></div>
+    <div class="hero__small--content">
+      <h1 class="hero__small--content--title">Black Swan <span>Digital</span></h1>
+      <h2 class="hero__small--content--sub">Who we are</h2>
+      <p class="hero__small--content--text">Every story we tell and every interaction we create, must not only look beautiful, but has to feel and function beautifully, too.</p>
+    </div>
+  </section> -->
+
+  <section class="test">
+    <h1 class="test--title">Who are we</h1>
+        <img src="images/seven.png" alt="" class="test--img">
+        <div class="test__content">
+          <p class="test__content--text">
+            Based in the North West, I am a recent graduate from Edge Hill with aspirations of working within the web industry. I have recently completed a BSc in Web Design & Development, where I achieved an overall first-class classification.
+          </p>
+          <p class="test__content--text">
+            I am an ambitious, personable and driven individual with a track record demonstrating passion, resilience and determination, shown by recently being awarded the ‘Academic Achievement Award’. Throughout my degree, I have acquired knowledge and experience in HTML5, CSS3, JavaScript, UX, PHP, Laravel, Version Control, Gulp, Sass, MySQL, the BEM methodology and extensive research skills.
+          </p>
+          <svg width="200" height="200" viewBox="0 0 786 292" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d)">
+            <path d="M7 103C10.6949 139.515 12.7352 175.699 14.5556 212.333C14.571 212.645 15.3865 227.45 15.8889 226.333C20.86 215.286 21.3885 200.976 22.5556 189.222C26.5983 148.506 26.6347 106.794 34.5556 66.5555C39.246 42.7279 43.262 75.8769 45.8889 84.3333C52.3706 105.199 60.6289 125.312 70.5556 144.778C75.7191 154.903 81.6006 169.117 90.1111 177.222C96.5123 183.319 113.552 141.302 114.333 139.667C121.478 124.722 129.067 109.998 134.556 94.3333C134.732 93.8288 139.1 79.1911 139.889 81C151.612 107.866 153.735 136.032 171.667 160.333C172.81 161.883 178.398 171.658 181.889 168.333C189.597 160.993 194.863 148.464 200.111 139.444C204.455 131.98 209.629 117.911 217.667 113.222C221.375 111.059 228.315 124.367 229.667 125.889C255.046 154.471 282.352 144.015 313.444 142.111C355.231 139.553 395.809 106.509 405.222 65.6667C405.861 62.8949 412.952 -0.541743 399 3.44443C394.34 4.77576 393.785 26.295 395.444 30.1111C396.414 32.3409 401.734 35.7699 403.222 37.2222C413.12 46.8789 423.002 56.5422 434.333 64.5555C449.36 75.1824 473.552 88.0495 492.111 77.4444C498.574 73.7512 500.068 77.7183 506.333 81C520.555 88.4493 539.447 84.6636 553.889 80.1111C571.541 74.5469 588.707 66.1475 605 57.4444C607.172 56.2843 612.495 52.7264 610.111 52.1111C605.497 50.9204 581.839 50.7734 581.667 50.7778C508.158 52.6155 421.324 69.0854 361.444 115.222C344.611 128.193 384.704 124.32 390.778 124.556C429.766 126.068 469.092 124.988 507.889 128.556C530.248 130.612 554.498 130.779 577 131C583.041 131.059 605.468 128.615 587 132.333C474.695 154.945 361.263 171.074 249.222 195.222C195.908 206.713 142.619 218.814 89.6667 231.889C79.4039 234.423 66.8262 236.035 58.5556 243.444C49.3891 251.656 38.0748 257.69 29.2222 266.111C24.467 270.634 41.135 272.36 47.6667 273C120.164 280.108 194.057 279.297 266.778 280.111C437.672 282.024 608.309 278.848 779 271" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <filter id="filter0_d" x="0.499817" y="0.764236" width="785" height="290.389" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="2"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+            </filter>
+            </defs>
+            </svg>
+      </div>
+  </section>
+
+  <section class="banner">
+</section>
+
+  <section class="different">
+    <div class="different__content">
+        <h1 class="different__content--title">Why We're Different</h1>
+        <p class="different__content--text">
+          We take on board what our clients actually want and understand that marketing is so much more than just a single service. From email marketing to Instagram advertising, we cover the entire spectrum, fluidly implementing each strategy to compliment the next.
+        </p>
+        <p class="different__content--text">
+          Time and time again, we hear horror stories of clients being left in the dark for weeks when it comes to their own advertising and to that we say enough! Standing by a fully transparent ethos, The Good Marketer promises to keep you informed at every step of the way with regular and detailed reports, phone calls that suit you and meetings tailored to your schedule.
+        </p>
+        <p class="different__content--text">
+          Through tenuous years of digital marketing experience, we have developed the best methodologies to ensure your small to medium sized business generates the traffic, leads and conversions you desire.
+        </p>
+    </div>
+    <div class="different__content">
+        <h1 class="different__content--title">Why Choose Us</h1>
+        <ul class="different__content--list">
+            <li class="different__content--list--item">Client Focused: No two of our clients are the same which is why we approach each project with full flexibility and undefined individuality</li>
+            <li class="different__content--list--item">Happily Affordable: Outrageous set-up and maintenance fees are an outdated ethos. Instead, we offer affordable price packages to give every small to medium-sized business the opportunity to succeed</li>
+            <li class="different__content--list--item">Dedicated Team: Our experienced marketers all hold the highest certification in their field, consistently providing each project with an eclectic flair of creativity and an extremely knowledgeable approach</li>
+        </ul>
+    </div>
+</section>
+
+<section class="images">
+  <img src="images/about/one.jpeg" alt="" class="images__one">
+  <img src="images/about/two.jpeg" alt="" class="images__two">
+</section>
+
+
+  <section class="why">
+      <h1 class="why__title">
+        We do our best work with clients when…
+      </h1>
+      <img src="images/a25.jpeg" alt="" class="why__img">
+      <div class="why__content--one">
+          <h2 class="why__content--one--title">
+            We have a unified project goal and vision
+          </h2>
+          <p class="why__content--one--text">We need a guiding light, a north star. Everyone working on the project needs to understand the overall objectives and collaborate towards our shared goal.</p>
+      </div>
+
+      <div class="why__content--two">
+        <h2 class="why__content--two--title">
+            We access senior stakeholders
+        </h2>
+        <p class="why__content--two--text">Chinese whispers don’t work. We need access to your senior stakeholders to discuss and make strategic decisions.</p>
+    </div>
+
+    <div class="why__content--three">
+        <h2 class="why__content--three--title">
+            There’s a dedicated client product owner
+        </h2>
+        <p class="why__content--three--text">It's more than just caring. It's doing everything you can to deliver something great, setting high standards for ourselves and expecting the same from the people around us..</p>
+    </div>
+
+    <div class="why__content--four">
+        <h2 class="why__content--four--title">
+            We share common values of respect and collaboration
+        </h2>
+        <p class="why__content--four--text">We’re in this together! The scale and scope of any project can sometimes seem daunting, but we will guide you through it and meet any challenges head on, together!</p>
+    </div>
+  </section>
+
+
+
+  <!-- <section class="banner">
+  </section> -->
+
+  
+
+ 
+
+
+  <!-- <section class="quote">
+    <img src="images/main2.jpg" alt="" class="quote__img">
+    <div class="quote__container">
+      <h1 class="quote__container--title">Why Black Swan?</h1>
+      <p class="quote__container--content">Creativity ignites when everyone is empowered and able to be their full self, whether that is loud, quiet, weird, wild. Whatever is unique to them. All are welcome.</p>
+    </div>
+    
+  </section> -->
+
+  <!-- Services Section -->
+  <!-- <section class="services">
+    <h1 class="services__title">02</h1>
+    <h2 class="services__subtitle">Our Services</h2>
+    <div class="services__container">
+      <img src="images/about12.jpeg" alt="" class="services__container--img--1">
+      <img src="images/about13.jpeg" alt="" class="services__container--img--2">
+    </div>
+  </section> -->
+
+  <!-- Projects Section -->
+  <!-- <section class="about">
+    <h1 class="about__title">03</h1>
+    <h2 class="about__subtitle">Recent Projects</h2>
+    <div class="about__container">
+    </div>
+  </section> -->
+
+ 
+  
+  <footer class="footer">
+    <img src="images/footer-logo.png" alt="">
+  </footer>
+
+  
+<!--Gsap CDN    -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.5/gsap.min.js"></script>
+
+<script>
+
+  var tl = new TimelineMax();
+
+    gsap.fromTo('.nav__list',
+          {x: '30rem', opacity: 0},
+          {x: 0, opacity: 1, ease: 'back.out(0)', delay:.5});
+
+    gsap.fromTo('.hero__img',
+        {x: '3rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(0)', delay:2.2});
+
+    gsap.fromTo('.hero__content--title',
+        {x: '30rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(0)', delay:1});
+
+    gsap.fromTo('.hero__content--sub',
+        {x: '30rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(0)', delay:1.4});
+
+    gsap.fromTo('.hero__content--text',
+        {x: '30rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(0)', delay:1.8});
+
+    gsap.fromTo('.hero__footer',
+        {x: '-30rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(0)', delay:2.2});
+
+    gsap.fromTo('.header__logo',
+        {x: '-30rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(0)', delay:3});
+      
+      
+
+</script>
+
+</body>
+</html>

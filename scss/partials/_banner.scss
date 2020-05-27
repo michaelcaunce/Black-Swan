@@ -1,0 +1,18 @@
+
+.banner {
+    display: none;
+
+    @include mq-90 {
+        display: block;
+        height: 30vh;
+        width: 75%;
+        background-image: url(../../images/about8.png);
+        background-position: top;
+        background-size: cover;
+    }
+
+    @include mq-120 {
+        height: 60vh;
+        margin: 10em 0;
+    }
+}

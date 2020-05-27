@@ -1,0 +1,270 @@
+.header {
+    background: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5em;
+    padding: 1.5em;
+    
+    &__logo {
+        height: 4em;
+        width: auto;
+    }
+
+    .nav {
+
+        @include mq-90 {
+            display: flex;
+        }
+
+        &__list {
+            font-family: 'Montserrat';
+            display: none;
+            list-style: none;
+
+            @include mq-90 {
+                display: flex;
+            }
+
+            &--item--link {
+                color: $black;
+                text-decoration: none;
+                padding: .3em .8em;
+                font-size: .9em;
+                position: relative;
+                transition: all 2s;
+                font-weight: 500;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    background: $purple;
+                }
+
+                &:hover {
+                    color: $white;
+                    z-index: 1;
+
+                    &::after {
+                        z-index: -10;
+                        animation: fill .8s forwards;
+                        -webkit-animation: fill .8s forwards;
+                        -moz-animation: fill .8s forwards;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Keyframes */
+@-webkit-keyframes fill {
+    0% {
+      width: 0%;
+      height: .1em;
+    }
+    50% {
+      width: 100%;
+      height: .1em;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+      
+    }
+  }
+
+
+.mobile__nav {
+    font-family: 'Montserrat';
+
+    &--checkbox {
+        display: none;
+    }
+
+    // Styling for the navigation button
+    &--button {
+        position: fixed;
+        top: 1em;
+        right: 2em;
+        cursor: pointer;
+        z-index: 2000;
+        transition: .5s;
+
+        @include mq-90 {
+            display: none;
+        }
+
+        &:hover {
+            transition: .5s;
+        }
+
+        // Icon styling
+        &--icon {
+            position: relative;
+            margin-top: 1.5em;
+
+            &:hover,
+            &:hover::before,
+            &:hover::after {
+                background-color: purple;
+            }
+
+            &,
+            &::before,
+            &::after {
+                width: 1.5em;
+                height: .1em;
+                background-color: $black;
+                display: inline-block;  
+            }
+
+            &::before,
+            &::after {
+                content: '';
+                width: 1em;
+                position: absolute;
+                left: 0;
+                transition: all .4s;
+            }
+
+            &::before { 
+                top: -.5em; 
+            }
+
+            &::after { 
+                top: .5em; 
+            }
+        }
+    }
+
+    // Navigation background when open
+    &--background {
+        height: 3em;
+        width: 3em;
+        border-radius: 50%;
+        position: fixed;
+        top: 1em;
+        right: 1.4em;
+        background: $white;
+        z-index: 1000;
+        transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+
+        @include mq-90 {
+            display: none;
+        }
+    }
+
+    // Nav styling when the navigation is open/visible
+    &--navigation {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1500;
+        
+        // Hide the nav
+        opacity: 0;
+        width: 0;
+        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+        @include mq-90 {
+            display: none;
+        }
+
+        &--list {
+            position: relative;
+            list-style: none;
+            text-align: center;
+            width: 100%;
+
+            &--item {
+                margin: 1em;
+                
+                &--link {
+                    color: $black;
+                    text-decoration: none;
+                    font-size: 2.2em;
+                    padding: .3em;
+                    display: inline-flex;
+                    transition: 0.4s ease-in;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        transform: translate(-50%, -50%);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.2em;
+                        color: $purple;
+                        z-index: -100000;
+                        opacity: 0;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 400px;
+                        transition: letter-spacing 0.4s ease-in;
+                    }
+        
+                    &:hover::before {
+                        content: attr(data-text);
+                        font-family: 'cervanttisregular';
+                        opacity: .3;
+                        left: 50%;
+                        letter-spacing: 10px;
+                        // width: 1800px;
+                        // height: 1800px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Checkbox to open the nav
+    &--checkbox:checked ~ &--background {
+        transform: scale(80);
+    }
+
+    &--checkbox:checked ~ &--navigation {
+        opacity: 1;
+        width: 100%;
+    }
+
+    &--checkbox:checked ~ &--navigation &--navigation--list {
+        visibility: visible;
+    }
+
+    &--checkbox + &--button &--button--icon {
+        transition: 1.5s;
+    }
+
+    &--checkbox:checked + &--button &--button--icon {
+        background-color: transparent;
+        transition: .1s;
+    }
+
+    &--checkbox:checked + &--button &--button--icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &--checkbox:checked + &--button &--button--icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+}
+
+
+ 
+
+  
+
+
+  
